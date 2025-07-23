@@ -11,3 +11,6 @@ From    DUAL;
 
 Select  NEW_TIME(CURRENT_TIMESTAMP, 'GMT', 'PDT') as GMT_to_Pacific_DaylightTime
 From    DUAL;
+
+/* Query for list of available timezones. For 'AT TIME ZONE' use the value from TZNAME, for 'FROM_TZ' and 'NEW_TIME', use TZABBREV */
+Select * From V$TIMEZONE_NAMES; 
